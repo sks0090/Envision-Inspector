@@ -27,6 +27,7 @@
 #define IDB_BITMAP_RESPONSIVITY_ON      165
 #define IDB_BITMAP_SPEED_OFF            166
 #define IDB_BITMAP_SPEED_ON             167
+#define IDD_DIALOG_CTRL_FG              168
 #define IDC_CB_FG                       1000
 #define IDC_EDIT_BUF_NUM                1001
 #define IDC_CB_SDK                      1002
@@ -128,7 +129,10 @@
 #define IDC_CHK_BLUE                    1086
 #define IDC_BIT_RESPONSIVITY_OFF        1087
 #define IDC_BIT_RESPONSIVITY_ON         1088
+#define IDC_BTN_VERT_FLIP               1088
 #define IDC_BIT_SPEED_OFF               1089
+#define IDC_BTN_VERT_FLIP2              1089
+#define IDC_BTN_HOR_FLIP                1089
 #define IDC_BIT_SPEED_ON                1090
 #define ID_DIAGNOSTICTOOL               32771
 #define ID_FILE_DIAGNOSTICTOOL          32772
@@ -162,14 +166,15 @@
 #define ID_CONTROL_LIGHT                32800
 #define ID_LIGHT_ENVIT                  32801
 #define ID_LONGRUN_INIT                 32802
+#define ID_CONTROL_FRAMEGRABBER32803    32803
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        168
-#define _APS_NEXT_COMMAND_VALUE         32803
-#define _APS_NEXT_CONTROL_VALUE         1088
+#define _APS_NEXT_RESOURCE_VALUE        170
+#define _APS_NEXT_COMMAND_VALUE         32804
+#define _APS_NEXT_CONTROL_VALUE         1089
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

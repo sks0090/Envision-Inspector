@@ -20,7 +20,8 @@ public:
 	MIL_ID MilBufferDisplay;
 	MIL_ID MilDisplay;
 
-	MIL_ID MilBufferGrab[GRAB_FRAME_NUM];
+	//MIL_ID MilBufferGrab[GRAB_FRAME_NUM];
+	MIL_ID* MilBufferGrab;
 
 public:
 	/////////////////////////////////////// 일반 변수 /////////////////////////////////////////
@@ -32,8 +33,8 @@ public:
 	///////////////////////////////////////// Methods /////////////////////////////////////////
 	int GetSystemCount();
 	char* GetSystemName(int index);
-	bool Init(CString boardName, int sysIndex, int digIndex, CString dcfPath, int bufferCnt, void* pXferCallback, void* pXferContext);
-	void Free();
+	bool Init(CString boardName, int sysIndex, int digIndex, int nBufferCnt, CString dcfPath, int bufferCnt, void* pXferCallback, void* pXferContext);
+	void Free(int nBufferCnt);
 
 	bool Snap(int nCnt = 1);
 	bool Grab();

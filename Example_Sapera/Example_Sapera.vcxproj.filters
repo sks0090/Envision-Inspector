@@ -1,300 +1,322 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="리소스 파일">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\dialogs">
-      <UniqueIdentifier>{780fe2c6-a0ed-45e4-9105-566daec9a904}</UniqueIdentifier>
+    <Filter Include="MyApp">
+      <UniqueIdentifier>{7f939052-982d-43a5-9fb9-d24c102a61b3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\dialogs">
-      <UniqueIdentifier>{b88c75a6-3859-42f0-b0af-81633dda2906}</UniqueIdentifier>
+    <Filter Include="MyApp\Controllers">
+      <UniqueIdentifier>{9f7e5ae5-51e2-4db8-ad86-111474466b70}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\custom">
-      <UniqueIdentifier>{c6ec90ed-f00c-4492-b47d-dac21bd4189b}</UniqueIdentifier>
+    <Filter Include="MyApp\Models">
+      <UniqueIdentifier>{c8d4e628-f84e-4c55-81dd-01d3890f8716}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\custom">
-      <UniqueIdentifier>{889c9020-bec5-4888-ad64-ba87438e21e6}</UniqueIdentifier>
+    <Filter Include="MyApp\Views">
+      <UniqueIdentifier>{dd03a5dc-b9a6-419f-aba1-7e50d2749495}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\dialogs\Image_Processing">
-      <UniqueIdentifier>{2dfc8d1a-b48b-4e6f-8954-7d3c9759ea88}</UniqueIdentifier>
+    <Filter Include="MyApp\Utils">
+      <UniqueIdentifier>{404f5446-3dbd-4a08-857b-25be07539da7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\dialogs\Onboard_Processing">
-      <UniqueIdentifier>{9dc7f9b8-c62c-410f-821a-140bed542d14}</UniqueIdentifier>
+    <Filter Include="MyApp\Configs">
+      <UniqueIdentifier>{f5c6f81c-cd87-456c-b918-e9ea8183831d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\dialogs\Image_Analysis">
-      <UniqueIdentifier>{3c7535db-7ac3-45fa-8b47-6216366323e3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\dialogs\File">
-      <UniqueIdentifier>{f9ac2eba-6503-47a8-bfcf-a3260b644387}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\dialogs\File">
-      <UniqueIdentifier>{bc6dae70-d550-4050-8dff-01c0d6658aaa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\dialogs\Onboard_Processing">
-      <UniqueIdentifier>{8b64ce88-1c4d-4f29-b4b9-5e7285dd7d1a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\dialogs\Image_Processing">
-      <UniqueIdentifier>{20970b74-7025-4cb7-87c1-21fea8d2e66a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\dialogs\Image_Analysis">
-      <UniqueIdentifier>{7bb28284-69eb-4ae4-936d-72ef0e6d285d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\dialogs\Control">
-      <UniqueIdentifier>{d6c063b2-ca54-43f0-9f8a-19b83300dbbb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\dialogs\Control">
+    <Filter Include="MyApp\Views\Control">
       <UniqueIdentifier>{b7f30df3-2266-4e31-b669-9011814613e1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\custom\socket">
-      <UniqueIdentifier>{c813eedf-c6ab-4440-ab79-0bb703977aaf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\custom\socket">
-      <UniqueIdentifier>{ac1a195c-0246-4b1a-a617-ccf7df5c885d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\custom\dataforwarding">
-      <UniqueIdentifier>{19e9c199-c752-421a-a35c-4085e6bf9552}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\custom\dataforwarding">
-      <UniqueIdentifier>{ef169876-c80b-42d0-a6ca-33325c31f409}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\SDKs">
-      <UniqueIdentifier>{cc6bedf8-6337-48b6-a0a6-b6ad915f3c3e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\SDKs">
-      <UniqueIdentifier>{1c87155d-95fa-43d2-9489-27760337166a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\dialogs\Demo">
-      <UniqueIdentifier>{ce4f35ee-4b26-4066-9de7-87276d9e62fe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\dialogs\Demo">
+    <Filter Include="MyApp\Views\Demo">
       <UniqueIdentifier>{d5b127e7-a65b-4403-9e28-c36b126c56b6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\custom\serial">
-      <UniqueIdentifier>{ed9457d1-a87b-4086-a6a3-cbffba1e6bf1}</UniqueIdentifier>
+    <Filter Include="MyApp\Views\File">
+      <UniqueIdentifier>{bc6dae70-d550-4050-8dff-01c0d6658aaa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\custom\serial">
-      <UniqueIdentifier>{03d6ddec-80ae-4328-b082-f54c2bdb4304}</UniqueIdentifier>
+    <Filter Include="MyApp\Views\Image_Analysis">
+      <UniqueIdentifier>{7bb28284-69eb-4ae4-936d-72ef0e6d285d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\custom\motion">
+    <Filter Include="MyApp\Views\Image_Processing">
+      <UniqueIdentifier>{20970b74-7025-4cb7-87c1-21fea8d2e66a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Onboard_Processing">
+      <UniqueIdentifier>{8b64ce88-1c4d-4f29-b4b9-5e7285dd7d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\File\Diagnostic">
+      <UniqueIdentifier>{b4865cd9-489c-44a3-bff5-56ada64f17dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Control\Client">
+      <UniqueIdentifier>{98067d81-76ac-4bf6-a508-dfc879af1f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Control\Camera">
+      <UniqueIdentifier>{4bb4ed4c-1de7-4460-92af-8e3f3354eb2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Control\FFCEditor">
+      <UniqueIdentifier>{1f3c8ff9-e93d-4188-9c73-5254928fd28e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Control\Camera\LineaHS">
+      <UniqueIdentifier>{d4e04075-b397-4823-bb32-0b3cbdf299b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Control\Camera\Falcon">
+      <UniqueIdentifier>{742b0aa3-dc7e-47db-a5ca-ed2faf5a9dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Control\Light">
+      <UniqueIdentifier>{4fa024aa-63bc-4c7c-909b-0a99e6783fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Control\Server">
+      <UniqueIdentifier>{5200d1a7-f7e4-45c1-84b7-dd7b4a60b51f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Utils\motion">
       <UniqueIdentifier>{c57ccb19-a8e8-4020-b089-6e25cc46daaf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyApp\Utils\serial">
+      <UniqueIdentifier>{03d6ddec-80ae-4328-b082-f54c2bdb4304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Utils\socket">
+      <UniqueIdentifier>{ac1a195c-0246-4b1a-a617-ccf7df5c885d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Utils\dataforwarding">
+      <UniqueIdentifier>{ef169876-c80b-42d0-a6ca-33325c31f409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Utils\GUI">
+      <UniqueIdentifier>{be63a359-8c83-4d4c-9209-4b7d238e164f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Utils\processing">
+      <UniqueIdentifier>{e49d8235-0ebf-4e77-b542-598453e0c9b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Models\SDKs">
+      <UniqueIdentifier>{1c87155d-95fa-43d2-9489-27760337166a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Models\SDKs\Sapera">
+      <UniqueIdentifier>{56fff120-58a8-4f78-8186-461b596714b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Models\SDKs\MIL">
+      <UniqueIdentifier>{c6ef6f3e-76e1-4408-a2f4-410ba957d9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Models\Camera">
+      <UniqueIdentifier>{75dffb21-0f44-466a-9296-1e56d9256e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyApp\Views\Control\Framegrabber">
+      <UniqueIdentifier>{270762a0-6a96-4954-9095-ac8ad2197fa3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Example_Sapera.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Example_SaperaDlg.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="framework.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="SapMyProcessing.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="My_GUI.h">
-      <Filter>헤더 파일\custom</Filter>
-    </ClInclude>
-    <ClInclude Include="CDiagnosticDlg.h">
-      <Filter>헤더 파일\dialogs\File</Filter>
-    </ClInclude>
     <ClInclude Include="CImgStatisticDlg.h">
-      <Filter>헤더 파일\dialogs\Image_Analysis</Filter>
+      <Filter>MyApp\Views\Image_Analysis</Filter>
     </ClInclude>
     <ClInclude Include="CHdrDlg.h">
-      <Filter>헤더 파일\dialogs\Onboard_Processing</Filter>
-    </ClInclude>
-    <ClInclude Include="CControlCameraDlg.h">
-      <Filter>헤더 파일\dialogs\Control</Filter>
-    </ClInclude>
-    <ClInclude Include="ChartViewer.h">
-      <Filter>헤더 파일\custom</Filter>
-    </ClInclude>
-    <ClInclude Include="My_Thread.h">
-      <Filter>헤더 파일\custom</Filter>
-    </ClInclude>
-    <ClInclude Include="My_ImgAnalysis.h">
-      <Filter>헤더 파일\custom</Filter>
+      <Filter>MyApp\Views\Onboard_Processing</Filter>
     </ClInclude>
     <ClInclude Include="CChartDlg.h">
-      <Filter>헤더 파일\dialogs\Image_Analysis</Filter>
-    </ClInclude>
-    <ClInclude Include="My_Chart.h">
-      <Filter>헤더 파일\custom</Filter>
-    </ClInclude>
-    <ClInclude Include="CFFCEditorDlg.h">
-      <Filter>헤더 파일\dialogs\Control</Filter>
-    </ClInclude>
-    <ClInclude Include="CServerDlg.h">
-      <Filter>헤더 파일\dialogs\Control</Filter>
-    </ClInclude>
-    <ClInclude Include="CClientDlg.h">
-      <Filter>헤더 파일\dialogs\Control</Filter>
+      <Filter>MyApp\Views\Image_Analysis</Filter>
     </ClInclude>
     <ClInclude Include="MyServer.h">
-      <Filter>헤더 파일\custom\socket</Filter>
+      <Filter>MyApp\Utils\socket</Filter>
     </ClInclude>
     <ClInclude Include="MyClient.h">
-      <Filter>헤더 파일\custom\socket</Filter>
+      <Filter>MyApp\Utils\socket</Filter>
     </ClInclude>
     <ClInclude Include="define.h">
-      <Filter>헤더 파일\custom\socket</Filter>
+      <Filter>MyApp\Utils\socket</Filter>
     </ClInclude>
     <ClInclude Include="CServer.h">
-      <Filter>헤더 파일\custom\socket</Filter>
+      <Filter>MyApp\Utils\socket</Filter>
     </ClInclude>
     <ClInclude Include="CClient.h">
-      <Filter>헤더 파일\custom\socket</Filter>
+      <Filter>MyApp\Utils\socket</Filter>
     </ClInclude>
     <ClInclude Include="CommSlave.h">
-      <Filter>헤더 파일\custom\dataforwarding</Filter>
+      <Filter>MyApp\Utils\dataforwarding</Filter>
     </ClInclude>
     <ClInclude Include="DataPacketDefine.h">
-      <Filter>헤더 파일\custom\socket</Filter>
+      <Filter>MyApp\Utils\socket</Filter>
     </ClInclude>
     <ClInclude Include="DFStatusMnger.h">
-      <Filter>헤더 파일\custom\dataforwarding</Filter>
-    </ClInclude>
-    <ClInclude Include="ControlFalcon4Dlg.h">
-      <Filter>헤더 파일\dialogs\Control</Filter>
-    </ClInclude>
-    <ClInclude Include="SapMnger.h">
-      <Filter>헤더 파일\SDKs</Filter>
-    </ClInclude>
-    <ClInclude Include="MilMnger.h">
-      <Filter>헤더 파일\SDKs</Filter>
-    </ClInclude>
-    <ClInclude Include="My_ImgProcessing.h">
-      <Filter>헤더 파일\custom</Filter>
+      <Filter>MyApp\Utils\dataforwarding</Filter>
     </ClInclude>
     <ClInclude Include="OnBoardFFCDlg.h">
-      <Filter>헤더 파일\dialogs\Onboard_Processing</Filter>
+      <Filter>MyApp\Views\Onboard_Processing</Filter>
     </ClInclude>
     <ClInclude Include="DemoLineaHS2Dlg.h">
-      <Filter>헤더 파일\dialogs\Demo</Filter>
+      <Filter>MyApp\Views\Demo</Filter>
     </ClInclude>
     <ClInclude Include="SerialPort.h">
-      <Filter>헤더 파일\custom\serial</Filter>
-    </ClInclude>
-    <ClInclude Include="ControlLightEnvitDlg.h">
-      <Filter>헤더 파일\dialogs\Control</Filter>
+      <Filter>MyApp\Utils\serial</Filter>
     </ClInclude>
     <ClInclude Include="ACSC.h">
-      <Filter>헤더 파일\custom\motion</Filter>
+      <Filter>MyApp\Utils\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="Example_SaperaDlg.h">
+      <Filter>MyApp\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="SapMyProcessing.h">
+      <Filter>MyApp\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Example_Sapera.h">
+      <Filter>MyApp</Filter>
+    </ClInclude>
+    <ClInclude Include="CDiagnosticDlg.h">
+      <Filter>MyApp\Views\File\Diagnostic</Filter>
+    </ClInclude>
+    <ClInclude Include="CClientDlg.h">
+      <Filter>MyApp\Views\Control\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CFFCEditorDlg.h">
+      <Filter>MyApp\Views\Control\FFCEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="CControlCameraDlg.h">
+      <Filter>MyApp\Views\Control\Camera\LineaHS</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlFalcon4Dlg.h">
+      <Filter>MyApp\Views\Control\Camera\Falcon</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlLightEnvitDlg.h">
+      <Filter>MyApp\Views\Control\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="CServerDlg.h">
+      <Filter>MyApp\Views\Control\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartViewer.h">
+      <Filter>MyApp\Utils\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="My_Chart.h">
+      <Filter>MyApp\Utils\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="My_GUI.h">
+      <Filter>MyApp\Utils\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="My_Thread.h">
+      <Filter>MyApp\Utils\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="My_ImgAnalysis.h">
+      <Filter>MyApp\Utils\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="My_ImgProcessing.h">
+      <Filter>MyApp\Utils\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>MyApp\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>MyApp\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>MyApp\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>MyApp\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="MilMnger.h">
+      <Filter>MyApp\Models\SDKs\MIL</Filter>
+    </ClInclude>
+    <ClInclude Include="SapMnger.h">
+      <Filter>MyApp\Models\SDKs\Sapera</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>MyApp\Models\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlFGDlg.h">
+      <Filter>MyApp\Views\Control\Framegrabber</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Example_Sapera.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Example_SaperaDlg.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>MyApp\Views</Filter>
     </ClCompile>
     <ClCompile Include="SapMyProcessing.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>MyApp\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="My_GUI.cpp">
-      <Filter>소스 파일\custom</Filter>
-    </ClCompile>
-    <ClCompile Include="CDiagnosticDlg.cpp">
-      <Filter>소스 파일\dialogs\File</Filter>
-    </ClCompile>
-    <ClCompile Include="CImgStatisticDlg.cpp">
-      <Filter>소스 파일\dialogs\Image_Analysis</Filter>
-    </ClCompile>
-    <ClCompile Include="CHdrDlg.cpp">
-      <Filter>소스 파일\dialogs\Onboard_Processing</Filter>
-    </ClCompile>
-    <ClCompile Include="CControlCameraDlg.cpp">
-      <Filter>소스 파일\dialogs\Control</Filter>
-    </ClCompile>
-    <ClCompile Include="ChartViewer.cpp">
-      <Filter>소스 파일\custom</Filter>
-    </ClCompile>
-    <ClCompile Include="My_Thread.cpp">
-      <Filter>소스 파일\custom</Filter>
-    </ClCompile>
-    <ClCompile Include="My_ImgAnalysis.cpp">
-      <Filter>소스 파일\custom</Filter>
-    </ClCompile>
-    <ClCompile Include="CChartDlg.cpp">
-      <Filter>소스 파일\dialogs\Image_Analysis</Filter>
-    </ClCompile>
-    <ClCompile Include="My_Chart.cpp">
-      <Filter>소스 파일\custom</Filter>
-    </ClCompile>
-    <ClCompile Include="CFFCEditorDlg.cpp">
-      <Filter>소스 파일\dialogs\Control</Filter>
-    </ClCompile>
-    <ClCompile Include="CServerDlg.cpp">
-      <Filter>소스 파일\dialogs\Control</Filter>
-    </ClCompile>
-    <ClCompile Include="CClientDlg.cpp">
-      <Filter>소스 파일\dialogs\Control</Filter>
-    </ClCompile>
-    <ClCompile Include="MyClient.cpp">
-      <Filter>소스 파일\custom\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="MyServer.cpp">
-      <Filter>소스 파일\custom\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="CClient.cpp">
-      <Filter>소스 파일\custom\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="CServer.cpp">
-      <Filter>소스 파일\custom\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="DFStatusMnger.cpp">
-      <Filter>소스 파일\custom\dataforwarding</Filter>
-    </ClCompile>
-    <ClCompile Include="CommSlave.cpp">
-      <Filter>소스 파일\custom\dataforwarding</Filter>
-    </ClCompile>
-    <ClCompile Include="ControlFalcon4Dlg.cpp">
-      <Filter>소스 파일\dialogs\Control</Filter>
-    </ClCompile>
-    <ClCompile Include="SapMnger.cpp">
-      <Filter>소스 파일\SDKs</Filter>
-    </ClCompile>
-    <ClCompile Include="MilMnger.cpp">
-      <Filter>소스 파일\SDKs</Filter>
-    </ClCompile>
-    <ClCompile Include="My_ImgProcessing.cpp">
-      <Filter>소스 파일\custom</Filter>
+    <ClCompile Include="Example_Sapera.cpp">
+      <Filter>MyApp</Filter>
     </ClCompile>
     <ClCompile Include="OnBoardFFCDlg.cpp">
-      <Filter>소스 파일\dialogs\Onboard_Processing</Filter>
+      <Filter>MyApp\Views\Onboard_Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="CHdrDlg.cpp">
+      <Filter>MyApp\Views\Onboard_Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="CChartDlg.cpp">
+      <Filter>MyApp\Views\Image_Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="CImgStatisticDlg.cpp">
+      <Filter>MyApp\Views\Image_Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="CDiagnosticDlg.cpp">
+      <Filter>MyApp\Views\File\Diagnostic</Filter>
     </ClCompile>
     <ClCompile Include="DemoLineaHS2Dlg.cpp">
-      <Filter>소스 파일\dialogs\Demo</Filter>
+      <Filter>MyApp\Views\Demo</Filter>
     </ClCompile>
-    <ClCompile Include="SerialPort.cpp">
-      <Filter>소스 파일\custom\serial</Filter>
+    <ClCompile Include="CClientDlg.cpp">
+      <Filter>MyApp\Views\Control\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="CFFCEditorDlg.cpp">
+      <Filter>MyApp\Views\Control\FFCEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="CControlCameraDlg.cpp">
+      <Filter>MyApp\Views\Control\Camera\LineaHS</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlFalcon4Dlg.cpp">
+      <Filter>MyApp\Views\Control\Camera\Falcon</Filter>
     </ClCompile>
     <ClCompile Include="ControlLightEnvitDlg.cpp">
-      <Filter>소스 파일\dialogs\Control</Filter>
+      <Filter>MyApp\Views\Control\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="CServerDlg.cpp">
+      <Filter>MyApp\Views\Control\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="CommSlave.cpp">
+      <Filter>MyApp\Utils\dataforwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="DFStatusMnger.cpp">
+      <Filter>MyApp\Utils\dataforwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialPort.cpp">
+      <Filter>MyApp\Utils\serial</Filter>
+    </ClCompile>
+    <ClCompile Include="CClient.cpp">
+      <Filter>MyApp\Utils\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="CServer.cpp">
+      <Filter>MyApp\Utils\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClient.cpp">
+      <Filter>MyApp\Utils\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="MyServer.cpp">
+      <Filter>MyApp\Utils\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartViewer.cpp">
+      <Filter>MyApp\Utils\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="My_Chart.cpp">
+      <Filter>MyApp\Utils\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="My_GUI.cpp">
+      <Filter>MyApp\Utils\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="My_ImgAnalysis.cpp">
+      <Filter>MyApp\Utils\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="My_ImgProcessing.cpp">
+      <Filter>MyApp\Utils\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="My_Thread.cpp">
+      <Filter>MyApp\Utils\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>MyApp\Configs</Filter>
+    </ClCompile>
+    <ClCompile Include="MilMnger.cpp">
+      <Filter>MyApp\Models\SDKs\MIL</Filter>
+    </ClCompile>
+    <ClCompile Include="SapMnger.cpp">
+      <Filter>MyApp\Models\SDKs\Sapera</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>MyApp\Models\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlFGDlg.cpp">
+      <Filter>MyApp\Views\Control\Framegrabber</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

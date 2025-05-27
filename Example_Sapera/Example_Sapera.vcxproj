@@ -190,9 +190,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ACSC.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="CClient.h" />
     <ClInclude Include="CClientDlg.h" />
     <ClInclude Include="CControlCameraDlg.h" />
+    <ClInclude Include="ControlFGDlg.h" />
     <ClInclude Include="ControlLightEnvitDlg.h" />
     <ClInclude Include="DemoLineaHS2Dlg.h" />
     <ClInclude Include="OnBoardFFCDlg.h" />
@@ -228,9 +230,11 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CClient.cpp" />
     <ClCompile Include="CClientDlg.cpp" />
     <ClCompile Include="CControlCameraDlg.cpp" />
+    <ClCompile Include="ControlFGDlg.cpp" />
     <ClCompile Include="ControlLightEnvitDlg.cpp" />
     <ClCompile Include="DemoLineaHS2Dlg.cpp" />
     <ClCompile Include="OnBoardFFCDlg.cpp" />

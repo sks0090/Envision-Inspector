@@ -9,14 +9,13 @@ MilMnger::MilMnger() {
 	MilBufferDisplay = NULL;
 	MilDisplay = NULL;
 
-	for (int i = 0; i < GRAB_FRAME_NUM; i++)
-	{
-		MilBufferGrab[i] = M_NULL;
-	}
+	
+	MilBufferGrab = M_NULL;
+	
 }
 
 MilMnger::~MilMnger() {
-	Free();
+//	Free();
 }
 
 int MilMnger::GetSystemCount()
@@ -44,7 +43,7 @@ char* MilMnger::GetSystemName(int index)
 	return systemName;
 }
 
-bool MilMnger::Init(CString boardName, int sysIndex, int digIndex, CString dcfPath, int bufferCnt, void* pXferCallback, void* pXferContext)
+bool MilMnger::Init(CString boardName, int sysIndex, int digIndex, int nBufferCnt, CString dcfPath, int bufferCnt, void* pXferCallback, void* pXferContext)
 {
 	MIL_ID ret;
 	int digNum = 0;
@@ -79,14 +78,42 @@ bool MilMnger::Init(CString boardName, int sysIndex, int digIndex, CString dcfPa
 		MdigControl(MilDigitizer, M_GC_CLPROTOCOL, M_ENABLE);						// GenICam Enable
 	}
 
-	
+	MilBufferGrab = new MIL_ID[nBufferCnt];
+	for (int i = 0; i < nBufferCnt; i++)
+	{
+		MbufAlloc2d(MilSystem, m_nSizeX, m_nSizeY, 8 + M_UNSIGNED, M_IMAGE + M_GRAB, &MilBufferGrab[i]);
+	}
+
+	// alloc display buffer
+	ret = MbufAlloc2d(MilSystem, m_nSizeX, m_nSizeY, 8 + M_UNSIGNED, M_IMAGE + M_DISP, &MilBufferDisplay);
+
+	// alloc display
+	//MdispAlloc(MilSystem, M_DEFAULT, MIL_TEXT("M_DEFAULT"), M_WINDOWED, &MilDisplay);
+
+	//MdispSelectWindow(MilDisplay, MilBufferDisplay, GetDlgItem(IDC_ST_DISPLAY)->GetSafeHwnd());
+	//MdispControl(MilDisplay, M_SCALE_DISPLAY, M_ENABLE);
 
 	return true;
 }
 
-void MilMnger::Free()
+void MilMnger::Free(int nBufferCnt)
 {
+	if (MilBufferDisplay) { MbufFree(MilBufferDisplay); MilBufferDisplay = M_NULL; }
+	if (MilDisplay) { MdispFree(MilDisplay); MilDisplay = M_NULL; }
 
+	// alloc buffer
+	for (int i = 0; i < nBufferCnt; i++)
+	{
+		if (MilBufferGrab[i])
+		{
+			MbufFree(MilBufferGrab[i]);
+			MilBufferGrab[i] = M_NULL;
+		}
+	}
+
+	if (MilDigitizer) { MdigFree(MilDigitizer); MilDigitizer = M_NULL; }
+	if (MilSystem) { MsysFree(MilSystem); MilSystem = M_NULL; }
+	if (MilApplication) { MappFree(MilApplication); MilApplication = M_NULL; }
 }
 
 bool MilMnger::Snap(int nCnt)

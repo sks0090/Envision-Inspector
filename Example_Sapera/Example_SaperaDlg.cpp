@@ -133,6 +133,7 @@ BEGIN_MESSAGE_MAP(CExampleSaperaDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_CHK_DUAL_FG, &CExampleSaperaDlg::OnBnClickedChkDualFg)
 	ON_COMMAND(ID_DEMO_LINEAHS2, &CExampleSaperaDlg::OnDemoLineahs2)
 	ON_COMMAND(ID_LIGHT_ENVIT, &CExampleSaperaDlg::OnControlLightEnvit)
+	ON_COMMAND(ID_CONTROL_FRAMEGRABBER32803, &CExampleSaperaDlg::OnControlFramegrabber32803)
 END_MESSAGE_MAP()
 
 
@@ -331,6 +332,7 @@ void CExampleSaperaDlg::OnMouseMove(UINT nFlags, CPoint point)
 			bRun = true;
 		}
 	}
+
 	if(bRun) {
 		if (m_pMyGuiMain->OnMouseMove(nFlags, point))
 		{
@@ -678,6 +680,9 @@ bool CExampleSaperaDlg::InitClass()
 
 void CExampleSaperaDlg::Free(int index)
 {
+	int progressTime;
+
+	QueryPerformanceCounter(&functionStartTime);
 	if (m_strSDK == "SaperaLT")
 	{
 		m_SapMnger.Free(index);
@@ -690,6 +695,9 @@ void CExampleSaperaDlg::Free(int index)
 	{
 
 	}
+	QueryPerformanceCounter(&functionEndTime);
+	progressTime = (functionEndTime.QuadPart - functionStartTime.QuadPart) * 1000.f / m_perfFrequency.QuadPart;
+	DisplayStatus(_T("Free : %s[%d ms]"), m_strSDK, progressTime);
 }
 
 bool CExampleSaperaDlg::FreeClass()
@@ -1798,6 +1806,14 @@ void CExampleSaperaDlg::OnCameraFalcon4()
 	}
 }
 
+
+void CExampleSaperaDlg::OnControlFramegrabber32803()
+{
+	m_pControlFGDlg = new ControlFGDlg;
+	m_pControlFGDlg->Create(IDD_DIALOG_CTRL_FG, this);
+	m_pControlFGDlg->ShowWindow(SW_SHOWNORMAL);
+}
+
 void CExampleSaperaDlg::OnControlFfccoefficienteditor()
 {
 	m_pFFCEditorDlg = new CFFCEditorDlg;
@@ -2168,5 +2184,4 @@ bool CExampleSaperaDlg::OnOffEnvit(int index, bool bOn)
 	}
 	return true;
 }
-
 

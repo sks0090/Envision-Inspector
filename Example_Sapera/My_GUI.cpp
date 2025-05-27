@@ -82,9 +82,9 @@ void MyGUI::Free() {
 
 void MyGUI::UpdateViewRect(void)
 {
-	m_picbox->GetClientRect(&rectViewClient);				// View Rect on Window-based coordinate
-	m_picbox->GetWindowRect(rectViewWindow);				// View Rect on Client-based coordinate
-	m_picbox->GetParent()->ScreenToClient(rectViewWindow);	// Rect on Dialog-based coordinate
+	m_picbox->GetClientRect(&rectViewClient);				// picture box ±‚¡ÿ picture box ¡¬«•
+	m_picbox->GetWindowRect(rectViewWindow);				// Window ±‚¡ÿ picture box ¡¬«•
+	m_picbox->GetParent()->ScreenToClient(rectViewWindow);	// Dialog ±‚¡ÿ picture box ¡¬«•
 	m_viewSizeX = rectViewWindow.right - rectViewWindow.left;
 	m_viewSizeY = rectViewWindow.bottom - rectViewWindow.top;
 

@@ -18,6 +18,7 @@
 #include "CDiagnosticDlg.h"		// Diagnostic Tool 다이얼로그
 #include "CControlCameraDlg.h"	// Control - Camera - LineaHS 다이얼로그
 #include "ControlFalcon4Dlg.h"	// Control - Camera - Falcon4 다이얼로그
+#include "ControlFGDlg.h"			// Control - Frame grabber 다이얼로그
 #include "CFFCEditorDlg.h"			// Control - FFC Editor 다이얼로그
 #include "OnBoardFFCDlg.h"		// Control - Frame Grabber 다이얼로그
 #include "ControlLightEnvitDlg.h"
@@ -79,6 +80,7 @@ public:
 	CDiagnosticDlg* m_pDiagnosticDlg;
 	CControlCameraDlg* m_pControlCameraDlg;
 	ControlFalcon4Dlg* m_pControlFalcon4Dlg;
+	ControlFGDlg* m_pControlFGDlg;
 	CFFCEditorDlg* m_pFFCEditorDlg;
 	CServerDlg m_ServerDlg;
 	CClientDlg m_ClientDlg;
@@ -293,6 +295,7 @@ public:
 	afx_msg void OnBnClickedChkDualFg();
 	afx_msg void OnDemoLineahs2();
 	
+	afx_msg void OnControlFramegrabber32803();
 };
 
 void DisplayStatus(const TCHAR* fmt, ...);

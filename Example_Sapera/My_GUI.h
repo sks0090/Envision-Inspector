@@ -9,8 +9,8 @@ public:		// Variables
 	CPoint	m_posMouseOnImg;
 	CPoint m_pointDown;
 
-	CRect rectViewClient;
-	CRect rectViewWindow;					// picture control의 window Rect
+	CRect rectViewClient;					// picture box 기준 picture box 좌표
+	CRect rectViewWindow;					// // Dialog 기준 picture box 좌표
 
 	CDC* m_pDC;
 	CDC m_memDC;
