@@ -652,6 +652,8 @@ void CControlCameraDlg::OnCbnSelchangeCbTdiMode()
 		}
 	}
 
+	
+
 	m_pMainDlg->m_SapMnger.GetSapAcquisition()->SetParameter(CORACQ_PRM_CROP_HEIGHT, m_pMainDlg->m_nSizeY);
 	m_pMainDlg->m_SapMnger.GetSapAcquisition()->SetParameter(CORACQ_PRM_VACTIVE, m_pMainDlg->m_nSizeY);
 	

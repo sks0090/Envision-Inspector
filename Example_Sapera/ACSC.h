@@ -493,7 +493,7 @@
 #define ACSC_INTR_CYCLE						30	// FOR BACKWARD COMPATIBILITY
 #define ACSC_INTR_FPGA_UPGRADE				30
 #define ACSC_INTR_MESSAGE					31
-#define ACSC_INTR_COMM_CHANNEL_CLOSED		32
+#define ACSC_INTR_COMm_nChannel_CLOSED		32
 #define ACSC_INTR_SOFTWARE_ESTOP			33
 
 //////////////////////////////////////////////////////////////////////////////////////////////////

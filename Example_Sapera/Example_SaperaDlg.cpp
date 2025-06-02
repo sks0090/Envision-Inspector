@@ -339,13 +339,13 @@ void CExampleSaperaDlg::OnMouseMove(UINT nFlags, CPoint point)
 
 			if (m_pDstBuf8 == NULL)
 			{
-				msg.Format(_T("Envision Inspector - x : %d, y : %d, Value : %d"), m_pMyGuiMain->m_posMouseOnImg.x, m_pMyGuiMain->m_posMouseOnImg.y, 0);
+				msg.Format(_T("Envision Inspector - x : %d, y : %d, Value : %d"), m_pMyGuiMain->m_imageCoordinateMouse.x, m_pMyGuiMain->m_imageCoordinateMouse.y, 0);
 			}
 			else
 			{
-				if (m_pSrcBuf8[(m_nSizeX * m_nSizeY * m_nPlaneIndex) + (m_nSizeX * m_pMyGuiMain->m_posMouseOnImg.y) + m_pMyGuiMain->m_posMouseOnImg.x] >= 0) {
-					//msg.Format(_T("Envision Inspector - x : %d, y : %d, Value : %d"), m_pMyGuiMain->m_posMouseOnImg.x, m_pMyGuiMain->m_posMouseOnImg.y, m_pDstBuf8[m_nSizeX * m_pMyGuiMain->m_posMouseOnImg.y + m_pMyGuiMain->m_posMouseOnImg.x]);
-					msg.Format(_T("Envision Inspector - x : %d, y : %d, Value : %d"), m_pMyGuiMain->m_posMouseOnImg.x, m_pMyGuiMain->m_posMouseOnImg.y, m_pSrcBuf8[m_nSizeX * m_pMyGuiMain->m_posMouseOnImg.y + m_pMyGuiMain->m_posMouseOnImg.x]);
+				if (m_pSrcBuf8[(m_nSizeX * m_nSizeY * m_nPlaneIndex) + (m_nSizeX * m_pMyGuiMain->m_imageCoordinateMouse.y) + m_pMyGuiMain->m_imageCoordinateMouse.x] >= 0) {
+					//msg.Format(_T("Envision Inspector - x : %d, y : %d, Value : %d"), m_pMyGuiMain->m_imageCoordinateMouse.x, m_pMyGuiMain->m_imageCoordinateMouse.y, m_pDstBuf8[m_nSizeX * m_pMyGuiMain->m_imageCoordinateMouse.y + m_pMyGuiMain->m_imageCoordinateMouse.x]);
+					msg.Format(_T("Envision Inspector - x : %d, y : %d, Value : %d"), m_pMyGuiMain->m_imageCoordinateMouse.x, m_pMyGuiMain->m_imageCoordinateMouse.y, m_pSrcBuf8[m_nSizeX * m_pMyGuiMain->m_imageCoordinateMouse.y + m_pMyGuiMain->m_imageCoordinateMouse.x]);
 				}
 			}
 

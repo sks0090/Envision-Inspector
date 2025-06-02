@@ -134,6 +134,8 @@
 #define IDC_BTN_VERT_FLIP2              1089
 #define IDC_BTN_HOR_FLIP                1089
 #define IDC_BIT_SPEED_ON                1090
+#define IDC_BUTTON1                     1090
+#define IDC_SHAFT_ENCODER_SET           1090
 #define ID_DIAGNOSTICTOOL               32771
 #define ID_FILE_DIAGNOSTICTOOL          32772
 #define ID_IMAGEPROCESSING              32773
@@ -174,7 +176,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        170
 #define _APS_NEXT_COMMAND_VALUE         32804
-#define _APS_NEXT_CONTROL_VALUE         1089
+#define _APS_NEXT_CONTROL_VALUE         1091
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

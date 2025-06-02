@@ -28,4 +28,5 @@ public:
 public:
 	afx_msg void OnBnClickedBtnVertFlip();
 	afx_msg void OnBnClickedBtnHorFlip();
+	afx_msg void OnBnClickedShaftEncoderSet();
 };

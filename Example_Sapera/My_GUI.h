@@ -3,17 +3,21 @@
 
 #include "SapClassBasic.h"
 
+// image coordinate : 이미지 좌표
+// client coordinate : 다이얼로그 기준 좌표
+// Window coordinate : 전체 화면 기준 좌표
 class MyGUI {
 public:		// Variables
-	CPoint	m_posMouseWindow;
-	CPoint	m_posMouseOnImg;
+	CPoint m_clientCoordinateMouse;			// client coordinate for Mouse
+	CPoint m_imageCoordinateMouse;			// image coordinate for Mouse
 	CPoint m_pointDown;
 
-	CRect rectViewClient;					// picture box 기준 picture box 좌표
-	CRect rectViewWindow;					// // Dialog 기준 picture box 좌표
+	CRect m_windowCoordinateViewRect;				// window coordinate Rect for picture box
+	CRect m_clientCoordinateViewRect;				// client coordinate Rect for picture box
 
-	CDC* m_pDC;
 	CDC m_memDC;
+	CBitmap m_cBitmap;
+	void* m_pBits;		// DIB Section 생성용 포인터
 
 	bool m_bInit;
 	bool m_bDown;
@@ -21,7 +25,7 @@ public:		// Variables
 	bool m_bThreadView, m_bThreadViewProc;
 
 	int m_bitDepth;
-	int m_imgSizeX, m_imgSizeY, m_channel;	// Image 크기
+	int  m_nImgSizeX, m_nImgSizeY, m_nChannel;	// Image 크기
 	int m_viewSizeX, m_viewSizeY;			// View 크기
 	int ViewCenterPosX, ViewCenterPosY;		// VIew의 중앙 이미지 좌표
 	int MovingViewPosX, MovingViewPosY;		// 마우스 왼쪽 버튼 누르고 끈 위치
@@ -38,16 +42,19 @@ public:		// Variables
 
 	//unsigned char* m_dataView;		// View 이미지 data
 	unsigned int* m_dataView;
+	unsigned char* m_pView;
 	unsigned char* m_data8;			// 8bit data
 	unsigned short* m_data16;		// 16bit data
+	
+	// view 시간 간격 측정 to set 60 fps
+	LARGE_INTEGER		m_frequency;
+	LARGE_INTEGER		m_viewStartTime, m_viewEndTime;
 
 	MyGUI* m_RefGui;
 
 	CWinThread* m_ThreadView;
 
-	CEvent m_eventThreadView;
-
-	CBitmap m_bitmap;
+	CEvent m_eventThreadView;	
 
 	// GUI
 	CStatic* m_picbox;

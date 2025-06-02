@@ -98,6 +98,9 @@
     <Filter Include="MyApp\Views\Control\Framegrabber">
       <UniqueIdentifier>{270762a0-6a96-4954-9095-ac8ad2197fa3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyApp\Models\SDKs\Sapera\SapGui">
+      <UniqueIdentifier>{cd6a2144-31d8-4dfe-a1e7-b52b446a856d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CImgStatisticDlg.h">
